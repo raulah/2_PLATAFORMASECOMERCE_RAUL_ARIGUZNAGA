@@ -19,14 +19,39 @@ body{
 .contenido{
   background-color: #82c3a6;
   border-radius: 10px 10px 0px 0px;
-  padding-bottom: 1%;
 }
-.imagen1 img {/* IDEA: centrar la imagen1 */
+.imagen_central img {/* IDEA: centrar la imagen1 */
   margin-left: auto;
   margin-right: auto;
   display: block;
   width: 90%;
   box-shadow: 2px 2px 2px #02010a;
+}
+.imagenes_secundarias{
+  background-color: #d5c75f;
+}
+.paisajes{
+  width: 100%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+.retratos{
+  width: 100%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+.columnas{
+  display: flex;
+}
+.columnas > div{
+  width: 50%;
+  padding: 10px;
+}
+.columnas > div:first-child{
+  margin-right: 20px;
+}
+
+article{
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 @media (min-width:901px) {/* IDEA: query para adaptar a tama;os de pantalla */
   body{

@@ -9,16 +9,22 @@
 	</head>
 	<body>
 		<div class="contenido"><!-- IDEA: div de contenido -->
-			<header><!-- IDEA: div contenedor de todo el encabezado -->
+			<div><!-- IDEA: div contenedor de todo el encabezado -->
 				<h1>Comenzando con la Fotografía</h1>
 				<div><!-- IDEA: div contenedor de barra de navegacion -->
 					<nav>
 						<a href="index.html">Inicio</a> | <a href="paisajes.html">Paisajes</a> | <a href="retratos.html">Retratos</a>
 					</nav>
 				</div>
-			</header>
-			<article class="imagen1">
+			</div>
+			<article class="imagen_central">
 				<img src="imagenes/osaka.jpg" alt="imagen_central">
+			</article>
+			<article class="imagenes_secundarias">
+				<div class="columnas">
+					<div><a title="imagenes" href="paisajes.html"><img class="paisajes" src="imagenes/lambor.jpg" alt="imagenes" /></a></div><!-- IDEA: codigo para una imagen con link -->
+					<div><a title="imagenes" href="retratos.html"><img class="retratos" src="imagenes/ferrari.jpg" alt="imagenes" /></a></div><!-- IDEA: codigo para una imagen con link -->
+				</div>
 			</article>
 		</div>
 
