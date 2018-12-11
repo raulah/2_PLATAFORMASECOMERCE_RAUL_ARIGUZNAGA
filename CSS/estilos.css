@@ -1,17 +1,40 @@
 body{
-  background-color: #02010a;
-  font-family: 'Dancing Script', cursive;
+  background-color: #02010a;/* IDEA: color de fondo de toda la pagina */
+  font-family: 'Dancing Script', cursive; /* IDEA: tipo de letra */
+  width: 900px; /* IDEA: ancho fijo para version de la escritorio */
+  margin-left: auto;/* IDEA: centrar todo el body */
+  margin-right: auto;/* IDEA: centrar todo el body */
 }
-div h1 {
+.contenido h1 {
   margin-top: 0px;
 	margin-left: 0px;
-  background-color: #5b7989;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  background-color: #5b7989;/* IDEA: color de fondo del titulo */
   color: white;
   text-align: left;
-  text-shadow: 2px 2px #02010a;
-  border-radius: 10px 10px 0px 0px;
+  text-shadow: 2px 2px #02010a;/* IDEA: sombra de titulo */
+  border-radius: 10px 10px 0px 0px;/* IDEA: bordes de caja */
 }
-
-nav{
-  background-color: red;
+.contenido{
+  background-color: #82c3a6;
+  border-radius: 10px 10px 0px 0px;
+  padding-bottom: 1%;
+}
+.imagen1 img {/* IDEA: centrar la imagen1 */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+@media (min-width:901px) {/* IDEA: query para adaptar a tama;os de pantalla */
+  body{
+    width: 900px;
+  }
+}
+@media (max-width:900px) {
+  body{
+    width: 100%;
+  }
 }
