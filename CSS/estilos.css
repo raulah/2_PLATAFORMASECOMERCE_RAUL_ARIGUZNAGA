@@ -29,38 +29,80 @@ body{
 }
 .imagenes_secundarias{
   background-color: #d5c75f;
-}
-.paisajes{
-  width: 100%;
-  box-shadow: 2px 2px 2px #02010a;
-}
-.retratos{
-  width: 100%;
-  box-shadow: 2px 2px 2px #02010a;
-}
-.columnas{/* IDEA: codigo para hacer dos columnas */
-  display: flex;
-}
-.columnas > div{/* IDEA: codigo para hacer dos columnas */
-  width: 50%;
-  padding: 10px;
-}
-.columnas > div:first-child{/* IDEA: codigo para hacer dos columnas */
-  margin-right: 20px;
+
 }
 
-article{
-  padding-top: 1%;
-  padding-bottom: 1%;
+.paisajes, .retratos{
+    width: 40%;
+    box-shadow: 2px 2px 2px #02010a;
 }
-@media (min-width:901px) {/* IDEA: query para adaptar a tama;os de pantalla */
-  body{
-    width: 900px;
-  }
-}
-@media (max-width:900px) {
-  body{
-    width: 100%;
-  }
 
+
+
+#wrapper
+{
+	width: 900px;
+	margin: 0 auto;
+}
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+	#columna1
+	{
+
+	width: 100%;
+
+	}
+	#columna2
+	{
+
+	width: 100%;
+	}
+	#columna3
+	{
+
+	width: 100%;
+	}
+
+
+
+@media screen and (max-width: 900px){
+
+#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}
+}
+@media screen and (min-width: 901px){
+
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
 }
