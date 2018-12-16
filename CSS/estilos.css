@@ -1,4 +1,25 @@
+@keyframes imagen2-animacion {
+	0% {
+		position: relative;
+		margin-top: 150%;
+	}
+	60% {
+		position: relative;
+		margin-top: -5%;
+	}
+	100% {
+		position: relative;
+		margin-top: 0%;
+	}
+}
+
 body{
+	animation-name: imagen2-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
   background-color: #02010a;/* IDEA: color de fondo de toda la pagina */
   font-family: 'Dancing Script', cursive; /* IDEA: tipo de letra */
   width: 900px; /* IDEA: ancho fijo para version de la escritorio */
@@ -19,6 +40,13 @@ body{
 .navegacion a{
   color: white;
 }
+li{
+  display:inline;
+}
+ul{
+  margin-bottom: 0px;
+}
+
 .contenido h1 {
   margin-top: 0px;
 	margin-left: 0px;
@@ -77,13 +105,19 @@ a{
   width: 50%;
   padding: 10px;
 }
-/* IDEA: .columnas > div:first-child{
-  margin-right: 20px;
-} */
-
 article{
   padding-top: 1%;
   padding-bottom: 1%;
+}
+.paisajes:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  transition-duration: 1s;
+}
+.retratos:hover{
+  transform: translate(5px, -20px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  transition-duration: 1s;
 }
 @media screen and (min-width:900px){/* IDEA: query para adaptar a tama;os de pantalla */
   body{
@@ -97,7 +131,7 @@ article{
   .imagenes_secundarias{
     flex-direction: column;
   }
-  .paisajes , .retratos {
+  .paisajes, .retratos {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
@@ -119,6 +153,16 @@ article{
   }
   .contenido h1{
     text-align: center;
+  }
+  .galeria1, .galeria2{
+    flex-direction: column;
+  }
+  .foto1 img, .foto2 img, .foto3 img, .foto4 img, .foto5 img, .foto6 img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: block;
   }
 }
 
@@ -148,4 +192,39 @@ h2{
 }
 .pie_de_pagina_3 img{
   height: 15px;
+}
+.galeria1{
+  background-color: #d5c75f;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.foto1 img, .foto2 img, .foto3 img{
+  width: 33.33%;
+  width: 90%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+.foto1{
+  filter: blur(10px);
+}
+.foto2, .foto4, .foto6{
+  filter: grayscale(100%);
+}
+.foto3{
+  filter: sepia(90%);
+}
+.galeria2{
+  background-color: #d5c75f;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.foto4 img, .foto5 img, .foto6 img{
+  width: 33.33%;
+  width: 90%;
+  box-shadow: 2px 2px 2px #02010a;
 }
